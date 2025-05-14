@@ -23,30 +23,32 @@
       background-color: #fff;
       border-radius: 25px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      padding: 50px;
+      padding: 30px;
       max-width: 650px;
       text-align: center;
       position: relative;
       z-index: 1;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
+      font-size: 2.5em;
       color: #e91e63;
       margin-bottom: 20px;
       animation: fadeInDown 1.2s ease-out;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       color: #6a1b4d;
       line-height: 1.8;
       animation: fadeInUp 1.5s ease-in-out;
     }
 
     .love {
-      font-size: 2em;
+      font-size: 1.8em;
       color: #ff4081;
       margin-top: 30px;
       animation: pulse 2s infinite;
@@ -133,6 +135,25 @@
         transform: translateY(-800px) rotate(360deg);
       }
     }
+
+    /* Responsiveness for smaller screens */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .love {
+        font-size: 1.5em;
+      }
+      .footer {
+        font-size: 1em;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -157,7 +178,7 @@
       Kamu layak mendapatkan segalanya yang terbaik di dunia ini.
     </p>
     <div class="love">Aku sayang kamu, selalu. 💕</div>
-    <div class="footer">Dengan cinta, <br> Rifqi Nauval</div>
+    <div class="footer">Dengan cinta, <br> Rifqi nauval</div>
   </div>
 </body>
 </html>
