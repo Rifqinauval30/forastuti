@@ -13,10 +13,11 @@
       background: linear-gradient(to right, #ffe6f0, #ffe0f5);
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      align-items: flex-start;
+      min-height: 100vh;
+      overflow-y: scroll; /* Membuat halaman bisa discroll secara vertikal */
       position: relative;
+      padding: 20px;
     }
 
     .card {
@@ -30,6 +31,8 @@
       z-index: 1;
       width: 100%;
       box-sizing: border-box;
+      max-height: 90vh; /* Maksimal tinggi 90% dari layar */
+      overflow-y: auto; /* Jika konten terlalu panjang, bisa di-scroll */
     }
 
     h1 {
@@ -165,6 +168,9 @@
   <div class="floating"></div>
 
   <div class="card">
+    <!-- Tambahkan gambar di sini -->
+    <img src="https://drive.google.com/uc?export=view&id=1djwjwLG36srpNzu4X55GzDkzdvJunsI5" alt="Gambar Ulang Tahun" style="max-width: 100%; height: auto; border-radius: 10px;">
+    
     <h1>Selamat Ulang Tahun ke-25, Astuti Suryadi 💖</h1>
     <p>
       Di usiamu yang ke-25 ini,<br>
@@ -178,7 +184,7 @@
       Kamu layak mendapatkan segalanya yang terbaik di dunia ini.
     </p>
     <div class="love">Aku sayang kamu, selalu. 💕</div>
-    <div class="footer">Dengan cinta, <br> Rifqi nauval</div>
+    <div class="footer">Dengan cinta, <br> [Nama Kamu]</div>
   </div>
 </body>
 </html>
